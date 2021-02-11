@@ -1,0 +1,19 @@
+{
+  "name": "jian",
+  "version": "1.0.0",
+  "description": "如果在声明变量的同时也赋值了  也可以直接通过类型推导 let a = 1;\r # tsc 文件 -w监视模式  直接写tsc 如果此时项目的根目录有tsconfig.json 会随时编译全部ts文件\r ```typescript\r  {\r      include:['./src/**/*'], /*可以指定那些文件需要编译，不写全部都会编译 两个*表示任意目录 *表示任意文件 */ \r      exclude:['./src/hello/**/*'],//表示不包含\r      compilerOptions:{\r          \"target\":\"ES3\",//target用来指定ts编译成的js的版本\r          \"module\":\"\",//设置使用的模块化的规范 可以使用es6的模块化编码标准  指的是编译过后的文件的版本\r          \"lib\":\"\",//需要引入的库  包括dom  一般不设置\r          \"outDir\":\"./dist\",//指定编译后的js文件的目录\r          \"outfile\":\"./dist/app.js\",//设置后  将代码合并到一个文件夹里\r          \"allowJs\":true,//表示允许include的文件夹里面有js文件  默认false\r          \"checkJs\":false,//是否间差js文件   默认false\r          \"removeComment\":false,//是否移除注释  默认false\r          \"noEmit\":false,//不生成编译后的文件  默认false\r          \"onEmitOnError\":false,//当有错误的时候不生成编译后的文件 默认值是false\r          \"alwaysScrict\":false,//默认值是false  表示编译后的文件是否是开启严格模式\r          \"noImplicitAny\":false,//不允许隐式的any类型\r          \"strict\":false,//所有的严格检查的总开关  只要设置了这个\r      }\r  }\r ```",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.0.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
